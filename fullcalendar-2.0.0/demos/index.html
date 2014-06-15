@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset='utf-8' />
+
+		<link href='../fullcalendar.css' rel='stylesheet' />
+		<link href='../fullcalendar.print.css' rel='stylesheet' media='print' />
+
+		<script src='../lib/moment.min.js'></script>
+		<script src='../lib/jquery.min.js'></script>
+		<script src='../lib/jquery-ui.custom.min.js'></script>
+		<script src='../fullcalendar.min.js'></script>
+		<script src='application.js'></script>
+		<style>
+
+			body {
+				margin: 0;
+				padding: 0;
+				font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+				font-size: 14px;
+			}
+
+			#calendar {
+				width: 900px;
+				margin: 40px auto;
+			}
+			.ui-helper-hidden {
+				display: none;
+			}
+
+		</style>
+	</head>
+<body>
+
+	<div id='calendar'></div>
+	<div id='eventDialog' class='dialog ui-helper-hidden'>
+			<form>
+				<div>
+					<label>Title:</label>
+					<input id='title' class="field" type="text"></input>
+				</div>
+				<div>
+					<label>Color:</label>
+					<input id='color' class="field" type="text"></input>
+				</div>
+			</form>
+		</div>	
+
+</body>
+</html>
